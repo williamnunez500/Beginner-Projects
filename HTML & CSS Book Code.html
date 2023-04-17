@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1>HTML & CSS Book Code</h1>
+    <title>Project 1</title>
+</head>
+
+<body>
+    <h2>Chapter 1 Structure</h2>
+
+    <p>This is what I learned in chapter 1</p>
+    <p>Hello World!!</p>
+    <hr>
+    
+    <h2>Chapter 2 Text</h2>
+    <p>
+        <h3>Summary</h3>
+        We learned how to use <b>Bold</b> and <i>Italics</i> for word formatting. <br>
+        As well as <strong>Strong</strong> and <em>Emphasis.</em>
+        <br>
+        Then we learend about superscript for the 1<sup>st</sup> time as well as subscript<sub>1</sub>.
+        <blockquote>
+            Then we also learned how to use blockquotes to indent paragraphs <br>
+            As well as <q>Quotes</q> for quoting purposes.
+        </blockquote>
+        And then we made some cool <abbr title="Abbreviations">Abbr</abbr> like <abbr title="National Aeronautics and Space Administration">NASA</abbr>.
+    <br>
+        Another important thing we learned in this chapter was how to link email addresses. For example <address><a href="mailto:genericemail@gmail.com">myemail</a></address>
+    <br>
+        Lastly there was the insert, delete and <s>subtract</s> elements that are below: <br>
+        This is how the <del>worst</del> <ins>best</ins> ideas are made.
+    </p>
+    <hr>
+
+    <h2>Chapter 3 Lists</h2>
+    <p>
+        <h3>Summary</h3>
+        Three types of HTML Lists: Ordered, Unordered, and Definition. <br>
+        Ordered lists use numbers, Unordered lists use bullets, Definition lists are used to define terms.<br>
+        Lists can be nested inside one another.<br>
+        <br>
+        Top Ranked Car Companies:
+   
+    <ol>
+        <li>Toyota</li>
+        <li>Honda</li>
+        <li>Ford</li>
+    </ol>
+    Car Makes and Models:
+    <ul>
+        <li>Toyota</li>
+        <ul> 
+            <li>Corolla</li>
+            <li>Camry</li>
+            <li>FRS</li>
+            <li>Avalon</li>
+        </ul>
+        <li>Honda</li>
+        <ul> 
+            <li>Accord</li>
+            <li>Civic</li>
+        </ul>
+        <li>Ford</li>
+        <ul> 
+            <li>Focus</li>
+            <li>Fusion</li>
+            <li>Fiesta</li>
+        </ul>    
+    </ul>
+    Define a term:
+    <dl>
+        <dt>Car</dt>
+        <dd>A four-wheeled road vehicle that is powered by an engine and is able to carry a small number of people.</dd>
+    </dl>
+    </p>
+    <hr>
+
+    <h2>Chapter 4 Links</h2>
+    <p>
+        <h3>Summary</h3>
+        Links are created using the &#60;a&#62; element; it uses the href attribute to indicate the page you are linking to. <br>
+        You can create links to open email programs for emails, target a website, or an element withn a page. <br>
+        
+        <a href="mailto:jon.doe@example.com">Email Jon</a>
+        <br>
+        <a href="HelloWorld.html">Hello World</a>
+        <br>
+        <a href="https://www.imdb.com/" target="_blank">IMDB link in a new window</a>
+        <br>
+        <a href="https://www.imdb.com/">IMDB link</a>
+        
+
+    </p>
+    <hr>
+
+    <h2>Chapter 5 Images</h2>
+    <p>
+        <h3>Summary</h3>
+        Three rules for creating images:
+        <ol>
+            <li>Save images in the right format</li>
+            <li> Save images at the right size, same size as the display size</li>
+            <li>Use the correct resolution</li>
+        </ol>
+        <figure>
+            <img src="Stinger.jpg" alt="Photo of a Kia Stinger" height="200">
+            <figcaption>Kia Stinger</figcaption>
+        </figure>
+
+
+    </p>
+    <hr>
+
+    <h2>Chapter 6 Tables</h2>
+    <p>
+        <h3>Summary</h3>
+        A table is drawn out row by row
+        <table>
+            <tr>
+                <th></th>
+                <th scope="col">1s</th>
+                <th scope="col">2s</th>
+                <th scope="col">3s</th>
+            </tr>
+            
+            <tr>
+                <th scope="row">10s</th>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+            </tr>
+            <tr>
+                <th scope="row">20s</th>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <th scope="row">30s</th>
+                <td>31</td>
+                <td>32</td>
+                <td>33</td>
+            </tr>
+        </table>
+
+    </p>
+    <hr>
+
+    <h2>Chapter 7 Forms</h2>
+    <p>
+        <h3>Summary</h3>
+        Information from a form is sent in name/value pairs. 
+
+        <form>
+            <p>
+                <fieldset>
+                    <legend>
+                        Car Account Login: <br>
+                        Username:
+                <input type="text" name="username" size="15" maxlength="30" required="required"/> <br>
+                Password: 
+                <input type="password" name="password" size="15" maxlength="30" required="required"/>
+                        
+                    </legend>
+
+
+
+
+                </fieldset>
+                 <br> <br>
+                Comments: <br>
+                <textarea name="comments" cols="20" rows="4">Enter your comments here</textarea>
+
+                <p>
+                    Select a car:
+                    <input type="radio" name="car" value="Toyota" />
+                    Toyota
+                    <input type="radio" name="car" value="Honda" />
+                    Honda
+                    <input type="radio" name="car" value="Kia" />
+                    Kia
+                    <br>
+                    Select a model:
+                    <input type="checkbox" name="model" value="K5" />
+                    K5
+                    <input type="checkbox" name="model" value="Forte" />
+                    Forte
+                    <input type="checkbox" name="model" value="Optima" />
+                    Optima
+                    <br>
+                    Select a price range:
+                    <select name="range">
+                        <option value="0 - 10,000">0 - 10,000</option>
+                        <option value="10,000 - 20,000">10,000 - 20,000</option>
+                        <option value="20,000 - 30,000">20,000 - 30,000</option>
+                    </select>
+                    <br>
+                    Additional features:
+                    <select name="features" size="4" multiple="multiple">
+                        <option value="radio">Radio</option>
+                        <option value="window">Window</option>
+                        <option value="AC">AC</option>
+                        <option value="Heater">Heater</option>
+                    </select>
+                </p>
+
+
+            </p>
+
+
+        </form>
+
+    </p>
+    <hr>
+
+    <h2>Chapter 8 Extra Markup</h2>
+    <p>
+        <h3>Summary</h3>
+
+    </p>
+    <hr>
+
+    <h2>Chapter X</h2>
+    <p>
+        <h3>Summary</h3>
+
+    </p>
+    <hr>
+    
+    <h2>Chapter X</h2>
+    <p>
+        <h3>Summary</h3>
+
+    </p>
+    <hr>
+    
+
+
+</body>
+</html>
